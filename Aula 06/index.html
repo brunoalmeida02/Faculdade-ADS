@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de um formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form name="pesquisa">
+            <fieldset>
+                <legend>Pesquisa de acesso</legend>
+                <div class="blocosForm">
+                    <label for="nome">Nome:</label><input type="text" name="nome" id="nome">
+                </div>
+                <div class="blocosForm">
+                    <label>Sexo: </label><br>
+                    <input type="radio" id="sexo_m" value="m"><label for="sexo_m">M</label><br>
+                    <input type="radio" id="sexo_f" value="f"><label for="sexo_f">F</label><br>
+                </div>
+                <div class="blocosForm">
+                    <label for="acesso">Método principal de acesso: </label>
+                    <br>
+                    <select name="acesso" id="acesso">
+                        <option value="null"> - </option>
+                        <option value="wifi"> Wifi </option>
+                        <option value="3g"> 3G </option>
+                        <option value="4g"> 4G </option>
+                    </select>
+                </div>
+                <div class="blocosForm">
+                    <label for="acesso">Preferências de comunicação: </label><br>
+                    <input type="checkbox" name="comunic" id="check0p1"><label for="check0p1">Email</label><br>
+                    <input type="checkbox" name="comunic" id="check0p2"><label for="check0p2">Whatsapp</label><br>
+                    <input type="checkbox" name="comunic" id="check0p3"><label for="check0p3">Ligação</label><br>
+                </div>
+                <input type="button" id="btnAvaliar" value="Avaliar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
