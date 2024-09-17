@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Tigrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1>Jogo do tigrinho</h1>
+        </header>
+
+        <form action="">
+            <label for="number">Digite um número: </label>
+            <br>
+            <input name="number"type="number" id="num" >
+            <input type="button" id="button" value="Enviar">
+        </form>
+        <br>
+
+    
+        
+        <div class="result">
+            <hr>
+            <h3>Resultado:</h3>
+            <p id="resultado"></p>
+        </div>
+      
+
+
+    <script>
+        const numero = document.getElementById("num");
+        const button = document.getElementById("button");
+        const randNum = Math.floor(Math.random() * 5);
+        const resultado = document.getElementById("resultado");
+
+        console.log(randNum)
+
+        button.addEventListener("click", function (){
+            if(numero.value == randNum){
+                resultado.innerHTML = ("Parábens você acertou")
+                setTimeout(() => {
+                   resultado.innerHTML = ("")
+                }, 2000);
+            } 
+            else
+            {
+                resultado.innerHTML = ("errou")
+            }
+        })
+
+        
+
+        
+    </script>
+</body>
+</html>
