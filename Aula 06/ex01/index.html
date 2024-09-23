@@ -1,0 +1,35 @@
+<!--Exercício (1)
+• Crie em uma página html um formulário contendo dois campos para
+entrada de Nome e Sobrenome e dois botões. Utilizar o CSS é
+encorajado, porém opcional.
+a) Ao clicar em um botão (1), o conteúdo digitado deverá ser apresentado
+em um alerta e impresso no console;
+b) Ao clicar em um botão (2), o conteúdo digitado pelo usuário no campo
+Nome deverá aparecer no campo Sobrenome e vice-versa. Este flip de
+dados deverá ser executado a cada 2 segundos após o botão ter sido
+clicado;
+c) Implemente mais 2 botões com eventos e funções que quiser.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <label for="nome">Nome:</label><input type="text" name="nome" id="nome">
+            <label for="sobrenome">Sobrenome:</label><input type="text" name="sobrenome" id="sobrenome">
+        </fieldset>
+        <br>
+        <input type="button" value="Enviar" id="btn1">
+        <input type="button" value="FlipName" id="btn2">
+        <input type="button" value="Blink" id="btn3">
+        <input type="button" value="XD" id="btn4">
+    </form>
+    <div class="imageContainer"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
